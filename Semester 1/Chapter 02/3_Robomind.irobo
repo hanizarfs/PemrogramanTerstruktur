@@ -1,0 +1,30 @@
+# Nama : Hanizar Florian Sukma
+# NPM  : K3521033
+
+# PEMINDAHAN BEACON DARI UJUNG KANAN ATAS KE UJUNG KIRI ATAS
+
+# Pindah tempat
+west(1)
+right()
+
+# Mengeluarkan Cat Putih
+paintWhite()
+
+# Mulai membuat angka 8
+north(2)
+west(2)
+south(2)
+east(2)
+south(2)
+west(2)
+north(2)
+
+# Berhenti mengeluarkan cat putih
+stopPainting()
+
+# Ke tempat semula
+east(3)
+
+# Selebrasi
+right(19)
+end

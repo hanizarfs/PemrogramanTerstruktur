@@ -1,0 +1,40 @@
+# Nama : Hanizar Florian Sukma
+# NPM  : K3521033
+
+# PEMINDAHAN BEACON DARI UJUNG KANAN ATAS KE UJUNG KIRI ATAS
+
+# Perjalann menuju pengambilan Beacon
+east(9)
+left()
+forward(1)
+right()
+forward(2)
+north(6)
+east(2)
+north(1)
+    if(frontIsBeacon()){
+        pickUp()
+    } else{
+        end
+    }
+
+# Penyimpanan Beacon di tempat lain
+backward(1)
+west()
+repeat(){
+        if(frontIsClear()){
+            forward(1)
+        } else if(frontIsObstacle()){
+            north(2)
+            west(4)
+            putDown()
+            south(9)
+            east(4)
+            
+            # Selebrasi
+            right(19)
+            
+            # Selesai
+            end
+        }
+    }

@@ -1,0 +1,33 @@
+﻿# Nama : Hanizar Florian Sukma
+# NPM  : K3521033
+
+# BERJALAN MENGIKUTI JALAN WARNA PUTIH
+
+# Mencari jalan berwarna putih
+east(7)
+
+# Mengikuti jalan berawarna putih secara otomatis
+repeat(){
+    
+    #Jika di depan jalan berwarna putih, maka jalan 1 langkah
+    if(frontIsWhite()){	
+        forward(1)
+    }
+    
+    # Jika di kanan jalan berwarna putih, maka belok kanan
+    else if(rightIsWhite()){
+        right()
+    }
+    
+    # Jika di kiri jalan berwarna putih, maka belok kiri
+    else if(leftIsWhite()){
+        left()
+    }
+    
+    # Jika di depan adalah rintangan, maka berhenti
+    else if(frontIsObstacle()){
+        end
+    }
+}
+
+# ==================================== #
